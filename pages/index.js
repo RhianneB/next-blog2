@@ -1,47 +1,35 @@
 import Head from 'next/head'
-import Layout, { siteTitle } from '../components/layout'
-import { getSortedPostsData } from '../lib/posts'
-import Link from 'next/link'
-import Date from '../components/date'
+import Image from 'next/image'
+import Navbar from '../components/Navbar'
+import profilePic from './Rhianne.png'
+import Footer from '../components/footer'
 
-export async function getStaticProps() {
-  const allPostsData = getSortedPostsData()
-  return {
-    props: {
-      allPostsData
-    }
-  }
-}
 
-export default function Home({ allPostsData }) {
+
+export default function Home() {
   return (
-    <Layout home>
+    <div className="font-mono">
       <Head>
-        <title>{siteTitle}</title>
+        <title>Portfolio</title>
+        <link rel="icon" href="/favicon.ico"/>
       </Head>
-      <section className="text-xl ">
-        <p className='my-5'>Hello! My name is Rhianne!!!!</p>
-        <p>
-          (This is a sample website - you’ll be building a site like this on{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
-        </p>
-      </section>
-      <section className="text-xl pt-1">
-        <h2 className="my-4 text-2xl font-bold">Blog</h2>
-        <ul className="">
-          {allPostsData.map(({ id, date, title }) => (
-            <li className="mb-5" key={id}>
-            <Link href={`/posts/${id}`}>
-              <a>{title}</a>
-            </Link>
-            <br />
-            <small className="text-gray-500">
-              <Date dateString={date} />
-            </small>
-          </li>
-          ))}
-        </ul>
-      </section>
-    </Layout>
+      <Navbar/>
+      <div className="flex flex-col lg:flex-row-reverse px-6 md:px-12 lg:mt-32 space-y-6 items-center lg:justify-center lg:space-x-reverse lg:space-x-28">
+        <div className='mt-4 w-60 h-auto '>
+        <Image src={profilePic} alt="Person"/>
+        </div>
+        <div className='flex flex-col items-center space-y-10 md:max-w-lg'>
+          <h1 className="text-5xl text-center">Hi, I'm Rhianne</h1>
+            <p className='text-center'>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
+            Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+            </p>
+            <a href= 'Rhianne.png' download ='picture.png'>
+              <button className='text-xl font-medium text-white bg-pink-500 hover:bg-black py-3 px-5 rounded-sm'>Download CV</button>
+            </a>
+        </div>
+      </div>
+      <Footer/>
+    </div>
   )
 }
