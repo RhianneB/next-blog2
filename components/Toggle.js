@@ -16,13 +16,13 @@ export default function Toggle(){
             }}>
                 <div className='flex flex-col space-y-4 text-center'>
                 <Link  href="/">
-                    <a className="hover:text-pink-500 hover:underline">Home</a>
+                    <a className="text-black hover:text-pink-500 hover:underline">Home</a>
                 </Link>
                 <Link  href="/">
-                    <a className="hover:text-pink-500 hover:underline">Blog</a>
+                    <a className="text-black hover:text-pink-500 hover:underline">Blog</a>
                 </Link>
                 <Link  href="/">
-                    <a className="hover:text-pink-500 hover:underline">Contact</a>
+                    <a className="text-black hover:text-pink-500 hover:underline">Contact</a>
                 </Link>
                 </div>
             </div>
