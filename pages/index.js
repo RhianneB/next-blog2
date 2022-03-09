@@ -17,7 +17,7 @@ export default function Home() {
           </Head>
           <Navbar/>
           <div className="flex flex-col lg:flex-row-reverse px-20 md:px-12 lg:px-0 lg:mt-14 space-y-6 items-center lg:justify-center lg:space-x-reverse lg:space-x-28">
-            <div className='mt-4 max-w-[270px] h-auto '>
+            <div className='mt-4 max-w-[270px] h-auto drop-shadow-[0_25px_25px_rgba(251,113,133,0.5)]'>
             <Image src={profilePic} alt="Person"/>
             </div>
             <div className='flex flex-col items-center space-y-10 md:max-w-lg'>
@@ -27,7 +27,7 @@ export default function Home() {
                 Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
                 </p>
                 <a href= './Sample-CV.pdf' download ='CV'>
-                  <button className='text-xl font-medium text-white bg-pink-400 hover:bg-black py-3 px-5 rounded-3xl'>Download CV</button>
+                  <button className='text-xl font-medium text-white bg-rose-400 hover:bg-black hover:animate-bounce py-3 px-5 rounded-3xl'>Download CV</button>
                 </a>
             </div>
           </div>
