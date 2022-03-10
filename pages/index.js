@@ -26,7 +26,7 @@ export default function Home() {
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
                 Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
                 </p>
-                <a href= './Sample-CV.pdf' download ='CV'>
+                <a href="/CV.pdf" download={"CV-Rhianne Bruce.pdf"}>
                   <button className='text-xl font-medium text-white bg-rose-400 hover:bg-black hover:animate-bounce py-3 px-5 rounded-3xl'>Download CV</button>
                 </a>
             </div>
