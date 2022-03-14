@@ -14,7 +14,7 @@ export default function Navbar(){
             </div>
             <div className="md:flex md:flex-row font-medium text-xl lg:self-start font-manrope md:space-x-16 justify-center self-center space-y-3 md:space-y-0 font hidden md:visible">
                 <p>
-                    <Link href="">
+                    <Link href="/">
                         <a className="text-black hover:underline hover:text-rose-400">Home</a>
                     </Link>
                 </p>
