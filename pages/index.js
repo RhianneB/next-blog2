@@ -30,7 +30,6 @@ export default function Home() {
                 </a>
             </div>
           </div>
-          <h4 className='text-center mt-8'>Recent Posts</h4>
       </div>
       <Footer/>
     </div>
