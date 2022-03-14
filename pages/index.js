@@ -21,16 +21,16 @@ export default function Home() {
             <Image src={profilePic} alt="Person"/>
             </div>
             <div className='flex flex-col items-center space-y-10 md:max-w-lg'>
-              <h1 className="text-5xl text-center">Hi, I'm Rhianne</h1>
+              <h1 className="text-5xl text-center">Hello, I'm Rhianne</h1>
                 <p className='text-center'>
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
-                Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                I'm an ambitious new developer with a passion to explore the world of web development focusing on user experience and web design
                 </p>
                 <a href="/CV.pdf" download={"CV-Rhianne Bruce.pdf"}>
                   <button className='text-xl font-medium text-white bg-rose-400 hover:bg-black hover:animate-bounce py-3 px-5 rounded-3xl'>Download CV</button>
                 </a>
             </div>
           </div>
+          <h4 className='text-center mt-8'>Recent Posts</h4>
       </div>
       <Footer/>
     </div>
