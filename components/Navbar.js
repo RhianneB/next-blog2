@@ -19,8 +19,8 @@ export default function Navbar(){
                     </Link>
                 </p>
                 <p>
-                    <Link href="">
-                        <a className="text-black hover:underline hover:text-rose-400">Blog</a>
+                    <Link href="/projects">
+                        <a className="text-black hover:underline hover:text-rose-400">Projects</a>
                     </Link>
                 </p>
                 <p>
