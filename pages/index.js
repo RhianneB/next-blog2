@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Navbar from '../components/Navbar'
-import profilePic from './Rhianne.png'
+import profilePic from '../public/images/Rhianne.png'
 import Footer from '../components/footer'
 
 

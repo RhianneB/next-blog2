@@ -1,6 +1,6 @@
 import Toggle from '../components/Toggle'
 import Image from 'next/image'
-import logo from '../pages/logo.png'
+import logo from '../public/images/logo.png'
 
 export default function Navbar(){
     return(
