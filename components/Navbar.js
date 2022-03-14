@@ -1,6 +1,7 @@
 import Toggle from '../components/Toggle'
 import Image from 'next/image'
 import logo from '../public/images/logo.png'
+import Link from 'next/link'
 
 export default function Navbar(){
     return(
@@ -12,9 +13,21 @@ export default function Navbar(){
                 <Toggle/>
             </div>
             <div className="md:flex md:flex-row font-medium text-xl lg:self-start font-manrope md:space-x-16 justify-center self-center space-y-3 md:space-y-0 font hidden md:visible">
-                <a href="" className="text-black hover:underline hover:text-rose-400">Home</a>
-                <a href="" className="text-black hover:underline hover:text-rose-400">Blog</a>
-                <a href="" className="text-black hover:underline hover:text-rose-400">Contact</a>
+                <p>
+                    <Link href="">
+                        <a className="text-black hover:underline hover:text-rose-400">Home</a>
+                    </Link>
+                </p>
+                <p>
+                    <Link href="">
+                        <a className="text-black hover:underline hover:text-rose-400">Blog</a>
+                    </Link>
+                </p>
+                <p>
+                    <Link href="contact">
+                        <a className="text-black hover:underline hover:text-rose-400">Contact</a>
+                    </Link>
+                </p>
             </div>
         </nav>
     );
