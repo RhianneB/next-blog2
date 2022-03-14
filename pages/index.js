@@ -4,13 +4,10 @@ import Navbar from '../components/Navbar'
 import profilePic from '../public/images/Rhianne.png'
 import Footer from '../components/footer'
 
-
-
-
 export default function Home() {
   return (
     <div className="font-mono relative min-h-screen">
-      <div className='pb-60'>
+      <div className='pb-60 '>
         <Head>
             <title>Rhianne Bruce</title>
             <link rel="icon" href="/favicon.ico"/>
@@ -35,3 +32,7 @@ export default function Home() {
     </div>
   )
 }
+
+
+
+
