@@ -3,7 +3,7 @@ import Footer from "../components/footer";
 
 export default function Contact(){
     return(
-        <div>
+        <div className="font-mono">
             <Navbar/>
             <div class="flex flex-col items-center font-bold pb-60 px-4">
                 <h2 class="text-3xl font-bold">Contact Me!</h2>
