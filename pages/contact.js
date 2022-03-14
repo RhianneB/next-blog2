@@ -3,7 +3,7 @@ import Footer from "../components/footer";
 
 export default function Contact(){
     return(
-        <div className="font-mono">
+        <div className="font-mono ">
             <Navbar/>
             <div class="flex flex-col items-center font-bold pb-60 px-4">
                 <h2 class="text-3xl font-bold">Contact Me!</h2>
@@ -84,7 +84,7 @@ export default function Contact(){
                                 </div>
                             </div>
                         </div>
-                        <button class="bg-rose-600 font-bold py-2 rounded-full " >Submit</button>
+                        <button class="bg-rose-600 hover:bg-black hover:text-white hover:animate-bounce font-bold py-2 rounded-full " >Submit</button>
                     </div>
                 </div>
             </div>
