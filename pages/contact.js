@@ -2,6 +2,11 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/footer";
 
 export default function Contact(){
+    
+    const handleClick = () =>  {
+        alert('Form Submitted!');
+    }
+    
     return(
         <div className="font-mono ">
             <Navbar/>
@@ -84,7 +89,7 @@ export default function Contact(){
                                 </div>
                             </div>
                         </div>
-                        <button class=" bg-rose-600 hover:bg-black hover:text-white hover:animate-bounce font-bold py-2 rounded-full " >Submit</button>
+                        <button onClick={handleClick} class=" bg-rose-600 hover:bg-black hover:text-white hover:animate-bounce font-bold py-2 rounded-full " >Submit</button>
                     </div>
                 </div>
             </div>
