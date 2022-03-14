@@ -9,7 +9,6 @@ export default function Footer(){
             <FaLinkedin className='hover:text-white'/>
             <FaTwitterSquare className='hover:text-white'/>
             </div>
-            <p className=''>Copyright @2022 All rights reserved</p>
         </footer>
     );
 };
