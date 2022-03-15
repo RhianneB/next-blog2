@@ -7,7 +7,7 @@ export default function Navbar(){
     return(
         <nav className="flex flex-col lg:flex-row  justify-between items-center py-5 px-16 text-center space-y-4 md:space-y-8 lg:space-y-0">
             <div className='h-28 w-28'>
-            <Image className='' src={logo} alt="Person"/>
+            <Image className='' src={logo} href="/" alt="Person"/>
             </div>
             <div className='md:hidden'>
                 <Toggle/>

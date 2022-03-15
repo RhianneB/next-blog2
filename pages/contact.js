@@ -90,7 +90,7 @@ export default function Contact() {
                 <div className="mt-8 max-w-md py-6 md:py-2 lg:py-6 px-12 rounded-2xl  bg-rose-300 drop-shadow-[25px_25px_25px_rgba(251,113,133,0.5)]">
                     <div className="grid grid-cols-1 gap-2">
 
-                {/* full Name */}
+                {/* Full Name */}
 
                     <label
                             htmlFor="fullname"
@@ -115,7 +115,7 @@ export default function Contact() {
                             focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                         />
                         {errors?.fullname && (
-                            <p className="text-red-500">Fullname cannot be empty.</p>
+                            <p className="text-red-500">Full Name cannot be empty.</p>
                         )}
 
                         {/* Email */}
