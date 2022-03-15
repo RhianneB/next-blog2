@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Navbar from '../components/Navbar'
 import profilePic from '../public/images/Rhianne.png'
 import Footer from '../components/footer'
+import Card from'../components/Card'
 
 export default function Home() {
   return (
@@ -28,6 +29,9 @@ export default function Home() {
             </div>
           </div>
       </div>
+      <h2>My Projects</h2>
+      <Card><h3>Hello</h3></Card>
+
       <Footer/>
     </div>
   )
