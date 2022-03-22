@@ -1,4 +1,5 @@
 import {FaFacebookSquare, FaLinkedin, FaTwitterSquare} from 'react-icons/fa';
+import {SiGitlab} from "react-icons/si";
 
 
 export default function Footer(){
@@ -7,7 +8,7 @@ export default function Footer(){
             <div className='flex text-2xl space-x-6'>
             <FaFacebookSquare className='hover:text-rose-600 hover:animate-bounce '/>
             <FaLinkedin className='hover:text-rose-600 hover:animate-bounce '/>
-            <FaTwitterSquare className='hover:text-rose-600 hover:animate-bounce '/>
+            <SiGitlab className='hover:text-rose-600 hover:animate-bounce'/>
             </div>
         </footer>
     );
