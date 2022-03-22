@@ -1,4 +1,4 @@
-import {FaFacebookSquare, FaLinkedin, FaTwitterSquare} from 'react-icons/fa';
+import {FaFacebookSquare, FaLinkedin} from 'react-icons/fa';
 import {SiGitlab} from "react-icons/si";
 
 
