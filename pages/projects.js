@@ -6,7 +6,7 @@ export default function Projects(){
         <div className="font-mono">
             <Navbar/>
             <h3 className='text-2xl text-center underline pt-4 pb-10'>My Projects</h3>
-            <div className='flex justify-around flex-col items-center lg:flex-row'>
+            <div className='justify-around flex-col grid grid-col-1 lg:grid-cols-3 items-center lg:flex-row'>
                 <Card/>
                 <Card/>
                 <Card/>
