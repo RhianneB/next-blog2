@@ -9,7 +9,7 @@ export default function Projects({allPostsData}){
     return(
         <div className="font-mono">
             <Navbar/>
-            <h3 className='text-2xl text-center underline pt-4 pb-10'>My Projects</h3>
+            <h3 className='text-3xl text-center underline pt-4 pb-10'>My Projects</h3>
             <div className='flex justify-around flex-col items-center lg:flex-row'>
             <ul>
             {allPostsData.map(({ id, date, title, link}) => (
@@ -36,9 +36,8 @@ export default function Projects({allPostsData}){
 export async function getStaticProps() {
     const allPostsData = getSortedPostsData()
     return {
-      props: {
+        props: {
         allPostsData
-      }
+        }
     }
-  }
-  
+}

@@ -9,4 +9,4 @@ Using:
 - Tailwind
 - JavaScript
 
-[**Click below to explore!**](https://rococo-concha-b09d55.netlify.app)
+[**Click to explore!**](https://rococo-concha-b09d55.netlify.app)
