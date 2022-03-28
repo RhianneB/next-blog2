@@ -33,7 +33,11 @@ img {
 .customText > p {
     @apply my-4
 }
+.customText > p> a{
+    @apply text-black
+}
 
 .customText > ul{
     @apply pl-10 list-disc
 }
+

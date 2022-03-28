@@ -12,19 +12,19 @@ export default function Projects({allPostsData}){
             <h3 className='text-2xl text-center underline pt-4 pb-10'>My Projects</h3>
             <div className='flex justify-around flex-col items-center lg:flex-row'>
             <ul>
-            {allPostsData.map(({ id, date, title }) => (
+            {allPostsData.map(({ id, date, title, link}) => (
                 <li className='mb-10' key={id}>
                 <Link href={`/posts/${id}`}>
-                    <a className='text-black'>{title}</a>
+                    <a className='text-black text-xl'>{title}</a>
                 </Link>
                 <br />
                 <small className='text-rose-400'>
                     <Date dateString={date} />
                 </small>
+                <div>{link}</div>
                 </li>
             ))}
             </ul>
-
             </div>
             <Footer/>
 

@@ -16,7 +16,7 @@ export default function Layout({ children, home }) {
                 <link rel="icon" href="/favicon.ico" />
                 <meta
                     name="description"
-                    content="Learn how to build a personal website using Next.js"
+                    content="My portfolio"
                 />
                 <meta
                     property="og:image"
@@ -31,7 +31,7 @@ export default function Layout({ children, home }) {
             {!home && (
                 <div className="pt-12">
                     <Link href="/projects">
-                        <a>← Back to Projects</a>
+                        <a className='text-black hover:animate-pulse'>← Back to Projects</a>
                     </Link>
                 </div>
             )}
