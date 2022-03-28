@@ -3,16 +3,9 @@ import Image from 'next/image'
 import Navbar from '../components/Navbar'
 import profilePic from '../public/images/Rhianne.png'
 import Footer from '../components/footer'
-import fs from 'fs'
-import path from 'path'
-import matter from 'gray-matter'
-import Link from 'next/link'
-import Card from '../components/Card'
 
 
-
-export default function Home({posts}) {
-  console.log(posts);
+export default function Home() {
   return (
     <div className="font-mono relative min-h-screen">
       <div className='pb-60 '>
@@ -36,42 +29,8 @@ export default function Home({posts}) {
             </div>
           </div>
       </div>
-      <div className='pb-32'>
-        {posts.map(post =>(
-          <Link href={'/posts/${post.slug}'} key={post.slug}>
-            <a>
-              <Card post={post}/>
-            </a>
-          </Link>
-        ))}
-      </div>
       <Footer/>
     </div>
   )
 }
-
-export async function getStaticProps(){
-  let files = fs.readdirSync(path.join('pages/posts'));
-  files = files.filter(file => file.split(".")[1] === 'mdx');
-  const posts = await Promise.all(
-    files.map(file =>{
-      const mdWithData = fs.readFileSync(
-        path.join('pages/posts', file), 
-        "utf-8"
-        );
-      const {data: frontMatter } = matter(mdWithData);
-      return {
-        frontMatter,
-        slug: file.split(".")[0],
-      };
-    })
-  )
-  return {
-    props: {
-      posts,
-    }
-  };
-}
-
-
 

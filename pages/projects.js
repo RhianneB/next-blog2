@@ -1,19 +1,44 @@
 import Navbar from '../components/Navbar'
 import Footer from '../components/footer';
-import Card from '../components/Card';
-export default function Projects(){
+import Link from 'next/link'
+import Date from '../components/date'
+import { getSortedPostsData } from '../lib/posts'
+
+
+export default function Projects({allPostsData}){
     return(
         <div className="font-mono">
             <Navbar/>
             <h3 className='text-2xl text-center underline pt-4 pb-10'>My Projects</h3>
             <div className='flex justify-around flex-col items-center lg:flex-row'>
-                <Card/>
-                <Card/>
-                <Card/>
+            <ul>
+            {allPostsData.map(({ id, date, title }) => (
+                <li className='mb-10' key={id}>
+                <Link href={`/posts/${id}`}>
+                    <a className='text-black'>{title}</a>
+                </Link>
+                <br />
+                <small className='text-rose-400'>
+                    <Date dateString={date} />
+                </small>
+                </li>
+            ))}
+            </ul>
+
             </div>
-            
             <Footer/>
+
         </div>
         
     );
 };
+
+export async function getStaticProps() {
+    const allPostsData = getSortedPostsData()
+    return {
+      props: {
+        allPostsData
+      }
+    }
+  }
+  
