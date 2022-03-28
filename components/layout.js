@@ -9,7 +9,7 @@ export const siteTitle = 'Next.js Sample Website'
 
 export default function Layout({ children, home }) {
     return (
-        <div>
+        <div className='font-mono'>
             <Navbar/>
             <div className="max-w-xl py-0 px-4 mt-12 mx-auto mb-24">
             <Head>
