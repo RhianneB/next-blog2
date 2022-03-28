@@ -26,7 +26,7 @@ export default function Navbar(){
                     </Link>
                 </p>
                 <p>
-                    <Link href="/projects">
+                    <Link href="projects">
                         <a className="text-black hover:underline hover:text-rose-400">Projects</a>
                     </Link>
                 </p>
