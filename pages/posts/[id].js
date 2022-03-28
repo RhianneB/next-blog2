@@ -10,7 +10,7 @@ export default function Post({ postData }) {
         <title>{postData.title}</title>
       </Head>
       <article>
-        <h1 className="text-3xl font-extrabold my-4">{postData.title}</h1>
+        <h1 className="text-3xl font-extrabold my-4 underline">{postData.title}</h1>
         <div className="text-rose-400">
           <Date dateString={postData.date} />
         </div>

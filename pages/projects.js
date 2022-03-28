@@ -10,9 +10,9 @@ export default function Projects({allPostsData}){
         <div className="font-mono">
             <Navbar/>
             <h3 className='text-3xl text-center underline pt-4 pb-10'>My Projects</h3>
-            <div className='flex justify-around flex-col items-center lg:flex-row'>
+            <div className='flex justify-around flex-col items-center'>
             <ul>
-            {allPostsData.map(({ id, date, title, link}) => (
+            {allPostsData.map(({ id, date, title}) => (
                 <li className='mb-10' key={id}>
                 <Link href={`/posts/${id}`}>
                     <a className='text-black text-xl'>{title}</a>
@@ -21,7 +21,6 @@ export default function Projects({allPostsData}){
                 <small className='text-rose-400'>
                     <Date dateString={date} />
                 </small>
-                <div>{link}</div>
                 </li>
             ))}
             </ul>
