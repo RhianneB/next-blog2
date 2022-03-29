@@ -115,7 +115,7 @@ export default function Contact() {
                             focus:border-rose-400 focus:ring focus:ring-rose-400 focus:ring-opacity-50"
                         />
                         {errors?.fullname && (
-                            <p className="text-red-500">Full Name cannot be empty.</p>
+                            <p className="text-rose-700">Full Name cannot be empty.</p>
                         )}
 
                         {/* Email */}
@@ -142,7 +142,7 @@ export default function Contact() {
                             focus:border-rose-400 focus:ring focus:ring-rose-400 focus:ring-opacity-50"
                         />
                         {errors?.email && (
-                            <p className="text-red-500">Email cannot be empty.</p>
+                            <p className="text-rose-700">Email cannot be empty.</p>
                         )}
 
                         {/* Subject */}
@@ -170,7 +170,7 @@ export default function Contact() {
                             focus:border-rose-400 focus:ring focus:ring-rose-400 focus:ring-opacity-50"
                         />
                         {errors?.subject && (
-                            <p className="text-red-500">Subject cannot be empty.</p>
+                            <p className="text-rose-700">Subject cannot be empty.</p>
                         )}
 
                         {/* Message */}
@@ -196,13 +196,13 @@ export default function Contact() {
                             focus:border-rose-400 focus:ring focus:ring-rose-400 focus:ring-opacity-50"
                         ></textarea>
                         {errors?.message && (
-                            <p className="text-red-500">Message body cannot be empty.</p>
+                            <p className="text-rose-700">Message body cannot be empty.</p>
                         )}
 
                         {/* Button */}
                         <button
                         type="submit"
-                        className="bg-rose-600 hover:bg-black hover:text-white hover:animate-bounce font-bold py-2 rounded-full"
+                        className="bg-rose-600 hover:bg-black hover:text-white hover:animate-bounce font-bold py-2 rounded-full mt-4"
                         >
                         {buttonText}</button>
                     
