@@ -112,7 +112,7 @@ export default function Contact() {
                             bg-rose-200
                             border-rose-300
                             shadow-sm
-                            focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                            focus:border-rose-400 focus:ring focus:ring-rose-400 focus:ring-opacity-50"
                         />
                         {errors?.fullname && (
                             <p className="text-red-500">Full Name cannot be empty.</p>
@@ -139,7 +139,7 @@ export default function Contact() {
                             bg-rose-200
                             border-rose-300
                             shadow-sm
-                            focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                            focus:border-rose-400 focus:ring focus:ring-rose-400 focus:ring-opacity-50"
                         />
                         {errors?.email && (
                             <p className="text-red-500">Email cannot be empty.</p>
@@ -167,7 +167,7 @@ export default function Contact() {
                             bg-rose-200
                             border-rose-300
                             shadow-sm
-                            focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                            focus:border-rose-400 focus:ring focus:ring-rose-400 focus:ring-opacity-50"
                         />
                         {errors?.subject && (
                             <p className="text-red-500">Subject cannot be empty.</p>
@@ -193,7 +193,7 @@ export default function Contact() {
                             bg-rose-200
                             border-rose-300
                             shadow-sm
-                            focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                            focus:border-rose-400 focus:ring focus:ring-rose-400 focus:ring-opacity-50"
                         ></textarea>
                         {errors?.message && (
                             <p className="text-red-500">Message body cannot be empty.</p>
