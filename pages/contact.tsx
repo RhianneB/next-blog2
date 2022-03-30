@@ -121,7 +121,7 @@ export default function Contact() {
                             shadow-sm
                             focus:border-rose-400 focus:ring focus:ring-rose-400 focus:ring-opacity-50"
                         />
-                        {errors?.[fullname] && (
+                        {errors?.fullname && (
                             <p className="text-rose-700">Full Name cannot be empty.</p>
                         )}
 
@@ -148,7 +148,7 @@ export default function Contact() {
                             shadow-sm
                             focus:border-rose-400 focus:ring focus:ring-rose-400 focus:ring-opacity-50"
                         />
-                        {errors?.[email] && (
+                        {errors?.email && (
                             <p className="text-rose-700">Email cannot be empty.</p>
                         )}
 
@@ -176,7 +176,7 @@ export default function Contact() {
                             shadow-sm
                             focus:border-rose-400 focus:ring focus:ring-rose-400 focus:ring-opacity-50"
                         />
-                        {errors?.[subject] && (
+                        {errors?.subject && (
                             <p className="text-rose-700">Subject cannot be empty.</p>
                         )}
 
@@ -202,7 +202,7 @@ export default function Contact() {
                             shadow-sm
                             focus:border-rose-400 focus:ring focus:ring-rose-400 focus:ring-opacity-50"
                         ></textarea>
-                        {errors?.[message] && (
+                        {errors?.message && (
                             <p className="text-rose-700">Message body cannot be empty.</p>
                         )}
 
