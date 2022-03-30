@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Navbar from '../components/Navbar'
-import profilePic from '../public/images/Rhianne.png'
 import Footer from '../components/footer'
 
 
@@ -16,7 +15,7 @@ export default function Home() {
           <Navbar/>
           <div className="flex flex-col lg:flex-row-reverse px-20 md:px-12 lg:px-0 lg:mt-14 space-y-6 items-center lg:justify-center lg:space-x-reverse lg:space-x-28">
             <div className='mt-4 max-w-[270px] h-auto drop-shadow-[0_25px_25px_rgba(251,113,133,0.5)]'>
-            <Image src={profilePic} alt="Person"/>
+            <Image src='../public/images/Rhianne.png' alt="Person"/>
             </div>
             <div className='flex flex-col items-center space-y-10 md:max-w-lg'>
               <h1 className="text-5xl text-center">Hello, I'm Rhianne</h1>

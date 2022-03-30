@@ -1,11 +1,11 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import Link from 'next/link'
 import Navbar from './Navbar'
 import Footer from './footer'
 
 
-export default function Layout({ children, home }) {
+export default function Layout({ children, home }: {children: React.ReactNode 
+    home?: boolean}) {
     return (
         <div className='font-mono'>
             <Navbar/>
