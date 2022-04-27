@@ -2,12 +2,6 @@ import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/footer";
 
-interface Form {
-    fullname: string,
-    email: string,
-    subject: string,
-    message: string
-}
 
 export default function Contact() {
    // States for contact form fields

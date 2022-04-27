@@ -23,7 +23,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "pages/projects.js", "pages/posts/[id].js", "pages/index.js", "pages/contact.js", "pages/_app.js", "lib/posts.js", "components/layout.js", "components/footer.js", "components/date.js", "components/Toggle.js", "components/Navbar.js", "components/Card.js"  ],
   "exclude": [
     "node_modules"
   ]

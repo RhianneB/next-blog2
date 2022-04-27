@@ -33,7 +33,7 @@ export default function Projects({allPostsData}){
     );
 };
 
-export const getStaticProps: GetStaticProps = async () => {
+export async function getStaticProps() {
     const allPostsData = getSortedPostsData()
     return {
         props: {

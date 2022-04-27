@@ -3,9 +3,7 @@ import Link from 'next/link'
 import Navbar from './Navbar'
 import Footer from './footer'
 
-
-export default function Layout({ children, home }: {children: React.ReactNode 
-    home?: boolean}) {
+export default function Layout({ children, home }) {
     return (
         <div className='font-mono'>
             <Navbar/>
